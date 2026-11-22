@@ -1,0 +1,128 @@
+
+.landing-page {
+  min-height: 100vh;
+  background: #f8f6f1;
+  color: #252b25;
+  font-family: 'DM Sans', sans-serif;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.landing-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 28px 7%;
+}
+
+.landing-nav h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
+  margin: 0;
+}
+
+.landing-nav h2 span {
+  color: #7b8b68;
+}
+
+.landing-nav > span {
+  color: #777;
+  font-size: 14px;
+}
+
+.landing-nav button,
+.start-button {
+  border: none;
+  background: #354b3a;
+  color: white;
+  padding: 14px 23px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+.landing-nav button:hover,
+.start-button:hover {
+  background: #526c55;
+  transform: translateY(-2px);
+}
+
+.landing-hero {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 55px 20px 75px;
+}
+
+.eyebrow {
+  color: #7b8b68;
+  font-size: 12px;
+  letter-spacing: 3px;
+  font-weight: 700;
+  margin-bottom: 22px;
+}
+
+.landing-hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(55px, 8vw, 88px);
+  line-height: 1.08;
+  font-weight: 500;
+  margin: 0;
+}
+
+.landing-hero h1 span {
+  color: #78896b;
+  font-style: italic;
+}
+
+.hero-description {
+  max-width: 470px;
+  color: #73766f;
+  font-size: 17px;
+  line-height: 1.8;
+  margin: 28px 0;
+}
+
+.start-button {
+  padding: 16px 32px;
+  font-size: 15px;
+}
+
+.hero-note {
+  color: #92938d;
+  font-size: 12px;
+  margin-top: 25px;
+}
+
+.landing-footer {
+  text-align: center;
+  padding: 22px;
+  color: #92938d;
+  font-size: 12px;
+  border-top: 1px solid #e9e6dd;
+}
+
+@media (max-width: 600px) {
+  .landing-nav {
+    padding: 20px;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .landing-nav > span {
+    display: none;
+  }
+
+  .landing-hero {
+    padding: 65px 20px;
+  }
+
+  .landing-hero h1 {
+    font-size: 55px;
+  }
+}
